@@ -1,7 +1,7 @@
 {
-  "name": "shahadat-chat-bot",
+  "name": "Caroline bb'z-chat-bot",
   "version": "2.0.0",
-  "description": "Made By SHAHADAT SAHU",
+  "description": "Made By Jîhãd",
   "main": "Main.js",
   "engines": {
     "node": "20.x",
@@ -22,12 +22,12 @@
     "shahadatproject",
     "messenger",
     "javascript",
-    "shadat",
-    "ullash",
-    "shahadat sahu",
-    "shahadat chat bot"
+    "Xihad",
+    "Jidu",
+    "Jîhãd",
+    "Caroline bb'z chat bot"
   ],
-  "author": "SHAHADAT SAHU",
+  "author": "Mr_Jîhãd",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues"
