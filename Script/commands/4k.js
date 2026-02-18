@@ -6,7 +6,7 @@ module.exports = {
     name: "4k",
     version: "1.0.0",
     hasPermssion: 0,
-    credits: "SHAHADAT SAHU", //don't change credit
+    credits: "Jîhãd Ähmèd", //don't change credit
     description: "Enhance Photo - Reply with image to upscale",
     commandCategory: "Image Editing Tools",
     usages: "Reply to an image",
@@ -38,7 +38,7 @@ async function processImage(api, threadID, messageID, messageReply) {
 
   try {
     const configUrl =
-      "https://raw.githubusercontent.com/shahadat-sahu/SAHU-API/refs/heads/main/SAHU-API.json";
+      "https://raw.githubusercontent.com/jihad6t9k/Jidu-API/refs/heads/main/Jidu-API.json";
 
     const apiConfig = await axios.get(configUrl);
     const apiUrl = apiConfig.data["4k"];
@@ -66,6 +66,6 @@ async function processImage(api, threadID, messageID, messageReply) {
 
     api.unsendMessage(wait.messageID);
   } catch (e) {
-    api.sendMessage("❌ API Error! Boss SAHU ke message din!", threadID, messageID);
+    api.sendMessage("❌ API Error! Boss Jidu ke message din!", threadID, messageID);
   }
 }
