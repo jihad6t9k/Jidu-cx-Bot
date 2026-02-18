@@ -41,24 +41,21 @@ module.exports.run = async function ({ api, event }) {
 `;
 
   const images = [
-    "https://i.imgur.com/8WBso8x.png",
-    "https://i.imgur.com/0VZu5eY.png",
-    "https://i.imgur.com/bkixgPK.jpeg",
-    "https://i.imgur.com/z6G6L4c.jpeg"
+    "facebook id"
   ];
 
-  const randomImg = images[Math.floor(Math.random() * images.length)];
+  const randomImg = images[Math.floor(images)];
 
   const callback = () => api.sendMessage(
     {
       body: info,
-      attachment: fs.createReadStream(__dirname + "/cache/owner.jpg")
+      attachment: fs.createReadStream(__dirname + "/cache")
     },
     event.threadID,
-    () => fs.unlinkSync(__dirname + "/cache/owner.jpg")
+    () => fs.unlinkSync(__dirname + "/cache")
   );
 
-  return request(encodeURI(randomImg))
-    .pipe(fs.createWriteStream(__dirname + "/cache/owner.jpg"))
+  return request(encodeURI)
+    .pipe(fs.createWriteStream(__dirname + "/cache"))
     .on("close", () => callback());
 };
