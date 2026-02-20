@@ -6,7 +6,7 @@ module.exports.config = {
   name: "kiss",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "SHAHADAT SAHU", //please don't change credit
+  credits: "Jîhãd Ähmèd", //please don't change credit
   description: "Generate a couple kiss image using sender and target Facebook UID via Avatar Canvas API",
   commandCategory: "banner",
   usePrefix: true,
@@ -40,7 +40,7 @@ module.exports.run = async function ({ event, api }) {
 
   try {
     const apiList = await axios.get(
-      "https://raw.githubusercontent.com/shahadat-sahu/SAHU-API/refs/heads/main/SAHU-API.json"
+      "https://raw.githubusercontent.com/jihad6t9k/jidu-cx-bot-API/refs/heads/main/Jidu-cx-bot-API.json"
     );
 
     const AVATAR_CANVAS_API = apiList.data.AvatarCanvas;
@@ -90,9 +90,10 @@ module.exports.run = async function ({ event, api }) {
 
   } catch {
     return api.sendMessage(
-      "API Error Call Boss SAHU",
+      "API Error Call Boss JIDU",
       threadID,
       messageID
     );
   }
 };
+
